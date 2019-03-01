@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Spring Boot - DELETE-UPDATE AJAX Example</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/ajaxGet.js"></script>
+	<script src="/js/ajaxPut.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>Customer List</h1>
+		<div id="customerlist">
+			<ul class="list-group">
+			</ul>
+		</div>
+		<div id="updateCustomerId" class="row col-md-6" style="">
+			<h3>Here to Edit Info of Customer:</h3>
+			<form id="customizedForm" style='background-color: #7FA7B0; color: white; padding: 20px 20px 20px 20px'>
+				<div class="form-group">
+					<label for="updateFormCustId">CustomerId</label> <input type="text" class="form-control" id="updateFormCustId" disabled="disabled"></input>
+				</div>
+				<div class="form-group"> 
+					<label for="updateFormName">Name:</label> <input type="text" class="form-control" id="updateFormName" />
+				</div>
+				<div class="form-group">
+					<label for="updateFormAge">Age:</label> <input type="number"
+						min="16" max="100" class="form-control" id="updateFormAge" />
+				</div>
+				<div class="form-group">
+					<label for="updateFormStreet">Street:</label> <input type="text"
+						class="form-control" id="updateFormStreet" />
+				</div>
+				<div class="form-group">
+					<label for="updateFormPostcode">Postcode:</label> <input
+						type="text" class="form-control" id="updateFormPostcode" />
+				</div>
+				<button type="submit" class="btn btn-default">Update</button>
+			</form>
+
+			<div id="putResultDiv" style="margin: 10px 0px 10px 0px;"></div>
+
+		</div>
+	</div>
+</body>
+</html>
